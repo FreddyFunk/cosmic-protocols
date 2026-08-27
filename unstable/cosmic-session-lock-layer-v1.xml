@@ -1,0 +1,35 @@
+<protocol name="cosmic_session_lock_v1">
+  <copyright>
+  </copyright>
+
+  <description summary="">
+  </description>
+
+  <interface name="cosmic_session_lock_layer_v1" version="1">
+    <request name="set_show_on_lock" since="1">
+      <description
+        summary=""
+      >
+      </description>
+      <arg
+        name="layer"
+        type="object"
+        interface="zwlr_layer_surface_v1"
+        summary="the layer surface"
+      />
+    </request>
+
+    <request name="unset_show_on_lock" since="1">
+      <description
+        summary=""
+      >
+      </description>
+      <arg
+        name="layer"
+        type="object"
+        interface="zwlr_layer_surface_v1"
+        summary="the layer surface"
+      />
+    </request>
+  </interface>
+</protocol>
